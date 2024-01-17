@@ -67,6 +67,9 @@ def test_FastaFormat():
     read, the first item is None
     """
 
+    fasta_parser = FastaParser('./tests/good.fq')
+    records = list(fasta_parser)
+    assert records[0][0] == None
 
     pass
 
@@ -109,4 +112,9 @@ def test_FastqFormat():
     Test to make sure fastq file is being read in. If this is a fasta file, the
     first line is None
     """
+
+    fastq_parser = FastqParser('./tests/good.fa')
+    records = list(fastq_parser)
+    assert records[0][0] == None
+
     pass

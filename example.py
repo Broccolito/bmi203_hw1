@@ -13,7 +13,7 @@ def main():
         
     # For each record of FastaParser, Transcribe the sequence
     # and print it to console
-       
+    
     fasta_parser = FastaParser('./tests/good.fa')
     fasta_records = list(fasta_parser)
 
