@@ -19,8 +19,8 @@ The learning goals of this project are:
 ## Coding Assessment -- these are placeholders for what we might ask you to do
 We've provided for you a basic Fasta and Fastq parser (written out in the parse.py file) to allow parsing of a Fasta and Fastq file using an iterator. Please take a look at that script to familiarize yourself with the functions. 
 ### Assignment tasks
-- [ ] Write a Transcription Function (Write this code in the seq.py file). 
-- [ ] Write a Reverse Transcription Function (Write this code in the seq.py file). 
+- [x] Write a Transcription Function (Write this code in the seq.py file). 
+- [x] Write a Reverse Transcription Function (Write this code in the seq.py file). 
 
 ## Software Development Assessment 
 - [x] Create a pip installable tool (only locally, do not submit to PyPI)
