@@ -22,7 +22,7 @@ def test_freebie_parser_2():
     """
     assert 1 != 2
 
-        
+
 def test_FastaParser():
     """
     Write your unit test for your FastaParser class here. You should generate
