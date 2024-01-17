@@ -1,4 +1,7 @@
 # Project 1
+
+![BuildStatus](https://github.com/Broccolito/bmi203_hw1/actions/workflows/main.yml/badge.svg?event=push)
+
 Building a FAST[AQ] Parser + Building a DNA -> RNA Transcriber
 
 # Assignment Overview
