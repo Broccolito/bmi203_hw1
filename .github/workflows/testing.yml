@@ -10,10 +10,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Install pytest
-        run: pip install pytest
-      - name: Run test_parsers.py
-        run: ./tests/test_parsers.py
-      - name: Run test_transcribe.py
-        run: ./tests/test_transcribe.py
+      - name: Install all dependencies
+        run: pip install .
+      - name: Run pytest
+        run: pytest -v
 
+        
