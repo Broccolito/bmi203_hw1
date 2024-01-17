@@ -25,12 +25,13 @@ We've provided for you a basic Fasta and Fastq parser (written out in the parse.
 	- [ ] Update the dependencies to include those that you use in your code
 
 - [  ] Write a unit test (in the test.py file) for
+	
 	- [ ] Fasta Parser
 	- [ ] Fastq Parser
 	- [ ] Transcription
 	- [ ] Reverse Transcription
-
-- [ ] Automate Testing with a [Github Actions](https://docs.github.com/en/actions)
+	
+- [ ] Automate Testing with a [Github Actions](pyt)
 
 	See blogposts below on helping set up github actions with pytest:
 	

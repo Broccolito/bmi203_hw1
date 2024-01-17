@@ -14,6 +14,16 @@ def main():
     # For each record of FastaParser, Transcribe the sequence
     # and print it to console
        
+    # fasta_parser = FastaParser('./tests/good.fa')
+    # records = list(fasta_parser)
+
+    # print(records)
+
+    # fastq_parser = FastqParser('./tests/good.fq')
+    # records = list(fastq_parser)
+
+    # print(records)
+
     # For each record of FastqParser, Transcribe the sequence
     # and print it to console
 

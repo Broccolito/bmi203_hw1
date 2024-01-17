@@ -1,0 +1,19 @@
+name: seqparser
+run-name: ${{ github.actor }} is running SeqParser tests
+on: [push]
+jobs:
+  python-test:
+    runs-on: macos-11
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install pytest
+        run: pip install pytest
+      - name: Run test_parsers.py
+        run: ./tests/test_parsers.py
+      - name: Run test_transcribe.py
+        run: ./tests/test_transcribe.py
+

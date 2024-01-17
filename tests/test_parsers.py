@@ -39,7 +39,7 @@ def test_FastaParser():
     """
     fasta_parser = FastaParser('./tests/good.fa')
     records = list(fasta_parser)
-    assert len(records) == 2
+    assert len(records) == 3
     assert records[0] == ("sequence_1", "ACGGACCACCATGAA")
     assert records[1] == ("sequence_2", "ACGGACCTGAA")
 
@@ -54,7 +54,7 @@ def test_FastaParser():
     """
     Test FastaParser with a badly formatted fasta file.
     """
-    fasta_parser = FastaParser('.tests/bad.fa')
+    fasta_parser = FastaParser('./tests/bad.fa')
     with pytest.raises(ValueError):
         list(fasta_parser)
 
@@ -83,14 +83,14 @@ def test_FastqParser():
     """
     fastq_parser = FastqParser('./tests/good.fq')
     records = list(fastq_parser)
-    assert len(records) == 2
+    assert len(records) == 3
     assert records[0] == ("seq0", "TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCG", "*540($=*,=.062565,2>'487')!:&&6=,6,*7>:")
     assert records[1] == ("seq1", "CCCCGGACGACTGATCCCGATAGAGCTCACTCTTCGAGG", "'(<#/0$5&!$+,:=%7=50--1;'(-7;0>=$(05*9,")
 
     """
     Test FastaParser with an empty fastq file.
     """
-    fastq_parser = fastq_parser('./tests/blank.fq')
+    fastq_parser = FastqParser('./tests/blank.fq')
     with pytest.raises(ValueError):
         list(fastq_parser)
 
@@ -98,7 +98,7 @@ def test_FastqParser():
     """
     Test FastaParser with a badly formatted fastq file.
     """
-    fastq_parser = FastqParser('.tests/bad.fq')
+    fastq_parser = FastqParser('./tests/bad.fq')
     with pytest.raises(ValueError):
         list(fastq_parser)
 
