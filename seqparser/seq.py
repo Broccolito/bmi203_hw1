@@ -31,9 +31,9 @@ def reverse_transcribe(seq: str) -> str:
     return transcribe(seq, True)
 
 # Testing cases
-print(transcribe('ATCG'))
-print(reverse_transcribe('ATCG'))
+# print(transcribe('ATCG'))
+# print(reverse_transcribe('ATCG'))
 
-print(transcribe(''))
-print(reverse_transcribe(' '))
+# print(transcribe(''))
+# print(reverse_transcribe(' '))
 
