@@ -186,3 +186,5 @@ class FastqParser(Parser):
                 # we assume that quality will always be after the seq, so if we get here and read_qual is False then we can just return the tuple
                 yield (seq_name, seq, line)  # line here is the quality string
                 read_qual = True
+
+
