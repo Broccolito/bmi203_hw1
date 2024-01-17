@@ -23,18 +23,18 @@ We've provided for you a basic Fasta and Fastq parser (written out in the parse.
 - [ ] Write a Reverse Transcription Function (Write this code in the seq.py file). 
 
 ## Software Development Assessment 
-- [ ] Create a pip installable tool (only locally, do not submit to PyPI)
-	- [ ] Edit the `pyproject.toml` file to reflect author information
-	- [ ] Update the dependencies to include those that you use in your code
+- [x] Create a pip installable tool (only locally, do not submit to PyPI)
+	- [x] Edit the `pyproject.toml` file to reflect author information
+	- [x] Update the dependencies to include those that you use in your code
 
 - [  ] Write a unit test (in the test.py file) for
 	
-	- [ ] Fasta Parser
-	- [ ] Fastq Parser
-	- [ ] Transcription
-	- [ ] Reverse Transcription
+	- [x] Fasta Parser
+	- [x] Fastq Parser
+	- [x] Transcription
+	- [x] Reverse Transcription
 	
-- [ ] Automate Testing with a [Github Actions](pyt)
+- [x] Automate Testing with a [Github Actions](pyt)
 
 	See blogposts below on helping set up github actions with pytest:
 	
